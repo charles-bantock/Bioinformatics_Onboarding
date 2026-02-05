@@ -2,6 +2,31 @@
 
 If you followed the main tutorial, you **initially cloned your fork of the Bioinformatics_Onboarding repo using the HTTPS link**. *But now* that you have set up your SSH key on your local machin, you can (and should) use the SSH link for all future cloning and remote operations for easier authentication. Below shows how to modify the remote. (*Note* that if you followed the main tutorial for your HPC setup (using Classic Authentication Token), you should keep using the HTTPS links for cloning and remote operations to/from your HPC (sub)directories.)
 
+**First, navigate to your cloned repo:**
+
+Based on where you cloned it earlier, use one of these commands:
+
+```bash
+cd ~/Bioinform_Projects/Bioinformatics_Onboarding
+```
+
+Or if you cloned it elsewhere, replace the path. For example, if you cloned to `Documents`:
+```bash
+cd ~/Documents/Bioinformatics_Onboarding
+```
+
+**Not sure where you cloned it?** Check your command history or look for the folder on your computer. Once you find it, use the full path:
+```bash
+cd /c/Users/charl/path/to/Bioinformatics_Onboarding
+```
+
+**Verify you're in a Git repository:**
+```bash
+pwd
+ls -la
+```
+You should see a hidden `.git` folder. If you don't, you're not in a cloned repo. Go back and clone the repo first using `git clone`.
+
 To check your current remote:
 ```bash
 git remote -v
@@ -126,3 +151,9 @@ Now you know how to recover from mistakes using Git!
 
 **Remember:**  
 - Now that you have an SSH key on your local machine, always use the SSH link (`git@github.com:...`) for cloning to your local machine for a smoother workflow.
+
+Complete the Bioinformatics_Onboarding/GitHub_tutorial/git_and_GitHub_tutorial.md. Remember you can open that tutorial by navigating to that directory and running:
+```bash
+code git_and_GitHub_tutorial.md
+```
+*On Windows, use `code`. On Mac/Linux, you can use `code` or `open`.*
